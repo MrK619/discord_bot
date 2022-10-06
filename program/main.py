@@ -1,5 +1,5 @@
-from turtle import color
-from discord_webhook import DiscordWebhook, DiscordEmbed
+
+import discord_webhook
 import json
 import requests
 import random
@@ -228,10 +228,10 @@ qoutes = qoutes["quotes"]
 
 def send_discord_message():
     print(f"Recieved the following details:")
-    webhook = DiscordWebhook(
+    webhook = discord_webhook.DiscordWebhook(
         url=WEBHOOK_URL, username="Finace Bot", 
     )
-    embed = DiscordEmbed(
+    embed = discord_webhook.DiscordEmbed(
         title="Good morning",
         color = 0x14aaeb
     )
