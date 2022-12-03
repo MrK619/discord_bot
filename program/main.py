@@ -255,3 +255,9 @@ if __name__ == "__main__":
         btc_price = btc["price"][:8]
         eth_price = eth["price"][:7]
         send_discord_message()
+    else:
+        btc =  requests.get("https://api.binance.com/api/v3/ticker/price?symbol=BTCUSDT").json()
+        eth =  requests.get("https://api.binance.com/api/v3/ticker/price?symbol=ETHUSDT").json()
+        btc_price = btc["price"][:8]
+        eth_price = eth["price"][:7]
+        send_discord_message()
