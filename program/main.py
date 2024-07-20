@@ -6,7 +6,7 @@ import random
 
 
 
-WEBHOOK_URL = "https://discord.com/api/webhooks/1027171336205901865/UJZjcvDYn25ejTTn6jbz0_EuS23b04fYXUedaWTITH2uicUaorDCVarjNYM97kUNrG6n"
+WEBHOOK_URL = "YOUR_DISCORD_URL"
  
 
 
